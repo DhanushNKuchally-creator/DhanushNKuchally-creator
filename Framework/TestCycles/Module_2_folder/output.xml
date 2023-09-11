@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.10 on win32)" generated="20230911 10:23:14.965" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase6" source="C:\Users\Dhanush N INT-214\PycharmProjects\pythonProject7\Framework\TestCycles\Module_2_folder\testcase6.robot">
+<test id="s1-t1" name="Login_User6" line="10">
+<kw name="Open Google1" library="common_keywords6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230911 10:23:15.262" level="INFO">Opening browser 'chrome' to base url 'https://terralogic.paxanimi.ai/login'.</msg>
+<msg timestamp="20230911 10:23:15.270" level="INFO">Executing: C:\Program Files\Python310\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<msg timestamp="20230911 10:23:16.463" level="WARN">Error getting version of chromedriver 116. Retrying with chromedriver 115 (attempt 1/5)</msg>
+<msg timestamp="20230911 10:23:16.465" level="WARN">Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 2/5)</msg>
+<msg timestamp="20230911 10:23:19.925" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230911 10:23:19.926" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.180 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0054A813+48355]
+	(No symbol) [0x004DC4B1]
+	(No symbol) [0x003E5358]
+	(No symbol) [0x004061AC]
+	(No symbol) [0x00401EF3]
+	(No symbol) [0x00400579]
+	(No symbol) [0x00430C55]
+	(No symbol) [0x0043093C]
+	(No symbol) [0x0042A536]
+	(No symbol) [0x004082DC]
+	(No symbol) [0x004093DD]
+	GetHandleVerifier [0x007AAABD+2539405]
+	GetHandleVerifier [0x007EA78F+2800735]
+	GetHandleVerifier [0x007E456C+2775612]
+	GetHandleVerifier [0x005D51E0+616112]
+	(No symbol) [0x004E5F8C]
+	(No symbol) [0x004E2328]
+	(No symbol) [0x004E240B]
+	(No symbol) [0x004D4FF7]
+	BaseThreadInitThunk [0x76037D59+25]
+	RtlInitializeExceptionChain [0x77A3B79B+107]
+	RtlClearBits [0x77A3B71F+191]
+</msg>
+<status status="FAIL" starttime="20230911 10:23:15.261" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${terralogic_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>${email_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${next}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.010" endtime="20230911 10:23:20.010"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${next}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.011" endtime="20230911 10:23:20.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.011" endtime="20230911 10:23:20.011"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.011" endtime="20230911 10:23:20.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230911 10:23:20.011" endtime="20230911 10:23:20.011"/>
+</kw>
+<status status="FAIL" starttime="20230911 10:23:15.261" endtime="20230911 10:23:20.011"/>
+</kw>
+<kw name="Timesheet" library="common_keywords6">
+<status status="NOT RUN" starttime="20230911 10:23:20.011" endtime="20230911 10:23:20.011"/>
+</kw>
+<kw name="Weekly_Timesheet" library="common_keywords6">
+<status status="NOT RUN" starttime="20230911 10:23:20.012" endtime="20230911 10:23:20.012"/>
+</kw>
+<kw name="Edit Timesheet on Daily Basis" library="common_keywords6">
+<status status="NOT RUN" starttime="20230911 10:23:20.012" endtime="20230911 10:23:20.012"/>
+</kw>
+<kw name="Edit Timesheet on Weekly Basis" library="common_keywords6">
+<status status="NOT RUN" starttime="20230911 10:23:20.013" endtime="20230911 10:23:20.013"/>
+</kw>
+<kw name="Delete Timesheet on Daily Basis" library="common_keywords6">
+<status status="NOT RUN" starttime="20230911 10:23:20.013" endtime="20230911 10:23:20.013"/>
+</kw>
+<kw name="Delete Timesheet on Weekly Basis" library="common_keywords6">
+<status status="NOT RUN" starttime="20230911 10:23:20.013" endtime="20230911 10:23:20.013"/>
+</kw>
+<status status="FAIL" starttime="20230911 10:23:15.260" endtime="20230911 10:23:20.014">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.180 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0054A813+48355]
+	(No symbol) [0x004DC4B1]
+	(No symbol) [0x003E5358]
+	(No symbol) [0x004061AC]
+	(No symbol) [0x00401EF3]
+	(No symbol) [0x00400579]
+	(No symbol) [0x00430C55]
+	(No symbol) [0x0043093C]
+	(No symbol) [0x0042A536]
+	(No symbol) [0x004082DC]
+	(No symbol) [0x004093DD]
+	GetHandleVerifier [0x007AAABD+2539405]
+	GetHandleVerifier [0x007EA78F+2800735]
+	GetHandleVerifier [0x007E456C+2775612]
+	GetHandleVerifier [0x005D51E0+616112]
+	(No symbol) [0x004E5F8C]
+	(No symbol) [0x004E2328]
+	(No symbol) [0x004E240B]
+	(No symbol) [0x004D4FF7]
+	BaseThreadInitThunk [0x76037D59+25]
+	RtlInitializeExceptionChain [0x77A3B79B+107]
+	RtlClearBits [0x77A3B71F+191]
+</status>
+</test>
+<status status="FAIL" starttime="20230911 10:23:14.967" endtime="20230911 10:23:20.016"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase6">Testcase6</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230911 10:23:16.463" level="WARN">Error getting version of chromedriver 116. Retrying with chromedriver 115 (attempt 1/5)</msg>
+<msg timestamp="20230911 10:23:16.465" level="WARN">Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 2/5)</msg>
+</errors>
+</robot>

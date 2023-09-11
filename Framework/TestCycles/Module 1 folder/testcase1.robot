@@ -9,7 +9,7 @@ Resource     C:\\Users\\Dhanush N INT-214\\PycharmProjects\\pythonProject7\\Fram
 Register User
 		Open
 		${registration_success} =  Run Keyword And Ignore Error    Fill Registration Form
-        Run Keyword If    ${registration_success}!= ('PASS', None)    Handle Registration Failure
+        Run Keyword If    ${registration_success}= ("PASS", None)    Handle Registration Failure
         Close Browser
 		#Fill Registration Form
 		#Submit Registration Form

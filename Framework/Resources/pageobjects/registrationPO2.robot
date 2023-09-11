@@ -1,6 +1,6 @@
 *** Variables ***
 ${name}         Dhanush
-${mail}         dhh@gmail.com
+${mail}         dhhh@gmail.com
 ${pass}         123456
 ${day}              2
 ${month}         October
